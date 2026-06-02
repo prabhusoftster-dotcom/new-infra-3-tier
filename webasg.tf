@@ -15,7 +15,7 @@ resource "aws_autoscaling_group" "swiggy-web-asg" {
 resource "aws_launch_template" "swiggy-web-template" {
   name_prefix   = "swiggy-web-template"
   image_id      = "ami-07a00cf47dbbc844c"
-  instance_type = "t3.small"
+  instance_type = "t2.small"
 
   network_interfaces {
     associate_public_ip_address = true
